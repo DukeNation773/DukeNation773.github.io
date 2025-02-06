@@ -1,0 +1,21 @@
+body {
+    background-image: url('silverware.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+h1 {
+    background-color: lightblue;
+    font-size: 22px;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+#page-title {
+    font-size: 22px;
+    background-color: lightblue;
+    text-align: center;
+    display: inline-block;
+}
+
