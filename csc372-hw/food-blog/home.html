@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Food Blog Home Page</title>
+
+<!--
+  Name: Christian Wilson
+  Date: 02.18.2025
+  CSC 372-01
+
+  This is the home.html page for my food recommendation blog. It includes a list of recommended
+  restaurants near Petty and their top dishes. The page also includes a link to the meal-plan.html
+-->
+    </head>
+    <body>
+        <header>
+            <h1>Campus Bites: Top Restaurants Near Petty</h1>
+            <p>Your guide to the best food within walking distance!</p>
+            <a href="meal-plan.html" id="header-button">Meal Plan Calculator</a>
+        </header>
+
+        <main>
+            <section id="intro">
+                <h2>Welcome to Campus Bites!</h2>
+                <p>
+                    Are you a culinary adventurer in search of the perfect meal
+                    on campus? Look no further! We've curated a list of the most
+                    exceptional dishes that are sure to tantalize your taste
+                    buds. Whether you're craving comfort food or eager to try
+                    something new, there's something for every palate. Along
+                    with plenty of food recommendations, we offer a meal plan
+                    calculator to help you plan your meals for the week. Follow
+                    this <a href="meal-plan.html">link</a> to get started!
+                </p>
+
+            </section>
+
+            <h2>Recommendations</h2>
+
+            <section>
+                <article class="restaurant">
+                    <h3>Slices By Tony</h3>
+                    <p>Slices By Tony offers a wide varity of pizzas, subs hot
+                        or cold, strombolis, calzones, and deserts</p>
+                    <p><strong>Location:</strong> 1401 Tate St, Greensboro, NC
+                        27403</p>
+                    <p><strong>Hours:</strong> 10:30am - 11:00pm, closed
+                        sunday</p>
+                    <div class="dish-gallery">
+                        <img src="images/tony-dish1-bbq.jpg" alt="Credit: From Slices by Tony's website" class="dish"
+                            id="dish1">
+                        <img src="images/tony-dish2-garlic" alt="Credit: From Slices by Tony's website" class="dish"
+                            id="dish2">
+                        <img src="images/tony-dish3-fresco.jpg" alt="Credit: From Slices by Tony's website" class="dish"
+                            id="dish3">
+                    </div>
+                    <div id="dish-description" class="dish-description hidden">
+                        <h4 id="dish-name"></h4>
+                        <p id="dish-info"></p>
+                        <p id="dish-price"></p>
+                    </div>
+                </article>
+                <article class="restaurant">
+                    <h3>East Cost Wings + Grill</h3>
+                    <p>
+                        East Coast Wings + Grill is a casual dining restaurant
+                        chain known for its wide variety
+                        of chicken wings, flavorful sauces, and a diverse menu
+                        that includes burgers, sandwiches, and salads.
+                    </p>
+                    <p><strong>Location:</strong> 338 Tate St, Greensboro, NC
+                        27403</p>
+                    <p><strong>Hours:</strong> 11:00am - 10:00pm weekdays,
+                        12:00pm - 10:00pm weekends</p>
+                    <div class="dish-gallery">
+                        <img src="images/bone-in.jpg" alt="Credit: From East Coast Wings + Grill's official website" class="dish" 
+                            id="dish4">
+                        <img src="images/fiesta-corn.jpg" alt="Credit: From East Coast Wings + Grill's official website" class="dish"
+                            id="dish5">
+                        <img src="images/caesar-salad.jpg" alt="Credit: From East Coast Wings + Grill's official website" class="dish"
+                            id="dish6">
+                    </div>
+                    <div id="dish-description" class="dish-description hidden">
+                        <h4 id="dish-name"></h4>
+                        <p id="dish-info"></p>
+                        <p id="dish-price"></p>
+                    </div>
+                </article>
+                <article class="restaurant">
+                    <h3>Raaz Indian Kitchen</h3>
+                    <p>
+                        Raaz Indian Kitchen offers an authentic taste of Indian
+                        cuisine, serving a variety of flavorful dishes inspired
+                        by traditional recipes. From aromatic biryanis to rich
+                        curries and freshly baked naan, the restaurant focuses
+                        on using high-quality ingredients and spices to create a
+                        vibrant and memorable dining experience.
+                    </p>
+                    <p><strong>Location:</strong> 427 Tate St, Greensboro, NC
+                        27403</p>
+                    <p><strong>Hours:</strong> 11:30am - 10:00pm,
+                        closed Sundays</p>
+                    <div class="dish-gallery">
+                        <img src="images/chicken-pakora.jpg" alt="Credit: From Raaz's website" class="dish"
+                            id="dish7">
+                        <img src="images/dal-tadka.jpg" alt="Credit: From Raaz's website" class="dish" 
+                        id="dish8">
+                        <img src="images/naan.jpg" class="dish" alt="Credit: From Raaz's website" 
+                        id="dish9">
+                    </div>
+                    <div id="dish-description" class="dish-description hidden">
+                        <h4 id="dish-name"></h4>
+                        <p id="dish-info"></p>
+                        <p id="dish-price"></p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h2>Specials That Are Always Running</h2>
+            <ul>
+                <li><strong>East Coast Wings:</strong> $9.99 5 piece wing and
+                    fires - <a
+                        href="https://www.google.com/maps/dir//338+Tate+St,+Greensboro,+NC+27403/@36.0683459,-79.8882498,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8853193f97cf7f77:0x309d743c5cd9f453!2m2!1d-79.8057842!2d36.0683703?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">Google
+                        Maps</a></li>
+                <li><strong>Slices by Tony:</strong> Lunch special $7.99 two
+                    slices and drink - <a
+                        href="https://www.google.com/maps?sca_esv=6fe806cc0ee527f3&rlz=1C1VDKB_enUS1071US1072&sxsrf=AHTn8zphLqUHXYCNUsVNrJuSCxjKL_Eyyw:1739913107153&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgDIgZzbGljZXMqAggAMhMQLhiABBjHARgnGIoFGI4FGK8BMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMggQABiABBiLAzIIEAAYgAQYiwMyBRAAGIAEMhAQLhiABBhDGMcBGIoFGK8BMggQABiABBiLAzIIEAAYgAQYiwMyIBAuGIAEGMcBGIoFGI4FGK8BGJcFGNwEGN4EGOAE2AEBSMQOUABYrgZwAHgAkAEAmAHYAaAB2wiqAQUwLjQuMrgBA8gBAPgBAZgCB6ACuBHCAgoQIxiABBgnGIoFwgIREC4YgAQYkQIY0QMYxwEYigXCAgsQLhiABBjRAxjHAcICBRAuGIAEwgIQEC4YgAQY0QMYQxjHARiKBcICChAuGIAEGEMYigXCAgoQABiABBhDGIoFwgITEC4YgAQYsQMY0QMYQxjHARiKBcICDRAAGIAEGEMYigUYiwPCAgoQLhiABBgUGIcCwgITEC4YgAQYQxjHARiKBRiOBRivAcICDRAAGIAEGLEDGEMYigXCAhEQLhiABBixAxjRAxiDARjHAcICFhAuGIAEGLEDGEMYxwEYigUYjgUYrwHCAhAQABiABBixAxhDGIoFGIsDwgILEAAYgAQYsQMYiwOYAwC6BgYIARABGBSSBwkwLjIuNC42LTGgB4tl&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KY3br7s_GVOIMbAJC7RcAx5P&daddr=401+Tate+St,+Greensboro,+NC+27403">Google
+                        Maps</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>@CampusBites</p>
+            <p>Contact Us</p>
+            <p>campuseats123@email.com</p>
+        </footer>
+
+    </body>
+</html>
