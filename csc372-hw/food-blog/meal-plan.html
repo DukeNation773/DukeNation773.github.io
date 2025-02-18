@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Meal Plan Calculator</title>
+
+<!--
+  Name: Christian Wilson
+  Date: 02.18.2025
+  CSC 372-01
+
+  This is the index.html page for my portfolio of web development work. It includes links to
+  side projects I have done during CSC 372, including an AboutMe page, a blog template, and
+  a crytogram generator.
+-->
+</head>
+<body>
+    <header>
+        <h1>Campus Bites: Top Restaurants Near Petty</h1>
+        <a href="home.html" id="header-button">Home</a>
+    </header>
+    
+    <main>
+        <section id="intro">
+            <h2>Welcome to your custom meal plan Calculator!</h2>
+            <p>
+                Click on a dish on the left to add it to your meal plan or 
+                click on a dish on the right to remove it! The dishes are from the 
+                top restaurants near Petty. Enjoy!
+            </p>
+        </section>
+        <section id="meal-plan-container">
+            <div id="dish-list">
+                <h2>Recommended Dishes</h2>
+                <ul id="available-dishes"></ul>
+            </div>
+            
+            <div id="meal-plan">
+                <h2>Your Meal Plan</h2>
+                <ul id="selected-dishes"></ul>
+                <p>Total Cost: <span id="total-cost">$0.00</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>@Campus Eats</p>
+        <p>Contact Us</p>
+        <p>campuseats123@email.com</p>
+    </footer>
+</body>
+</html>
