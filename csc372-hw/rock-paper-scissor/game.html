@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+  Name: Christian Wilson
+  Date: 03.07.2025
+  CSC 372-01
+
+  This is the game.html page that has a rock paper scissors game. Clicking on
+  the images of rock, paper, or scissors will start the game. Clicking the "Play Again"
+  button will reset the game.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>RockPapaerSciccors</title>
+    </head>
+    <body>
+        <div class="game-container">
+            <h1>Rock Paper Scissors Game. Go!</h1>
+            <hr>
+            <div class="player-throw">
+                <h2>Your Throw</h2>
+                <div class="throw-option" id="rock"
+                    onclick="playerChoice('rock')">
+                    <img src="images/rock.PNG" alt="Rock">
+                </div>
+                <div class="throw-option" id="paper"
+                    onclick="playerChoice('paper')">
+                    <img src="images/paper.PNG" alt="Paper">
+                </div>
+                <div class="throw-option" id="scissors"
+                    onclick="playerChoice('scissors')">
+                    <img src="images/scissors.PNG" alt="Scissors">
+                </div>
+            </div>
+
+            <div class="computer-throw">
+                <h2>Computer's Throw</h2>
+                <div id="computer-choice" class="computer-choice">
+                    <img src="images/question-mark.PNG" alt="Question Mark">
+                </div>
+            </div>
+
+            <hr>
+            <div class="outcome">
+                <h2>Results: <span id="result"></span></h2>
+            </div>
+
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </body>
+</html>
