@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+  Name: Christian Wilson
+  Date: 03/21/2025
+  CSC 372-01
+
+  This is the index.html page that shows the user a list of their github
+  repositories. The user can enter their github username and click the search
+  button to see their repositories.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Repo Gallery</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Your GitHub Repository Gallery</h1>
+      <div class="search-container">
+        <input type="text" id="username"
+          placeholder="Enter your username..."/>
+        <button id="search-btn">Search</button>
+      </div>
+    </header>
+
+    <main>
+      <ul id="repo-list"></ul>
+
+      <template id="repo-template">
+        <li class="repo-card">
+          <a href="#" target="_blank" class="repo-name"></a>
+          <p class="repo-description"></p>
+          <p><strong>Created:</strong> <span class="repo-created"></span></p>
+          <p><strong>Updated:</strong> <span class="repo-updated"></span></p>
+          <p><strong>Watchers:</strong> <span class="repo-watchers"></span></p>
+          <p><strong>Languages:</strong> <span
+              class="repo-languages"></span></p>
+          <p><strong>Commits:</strong> <span class="repo-commits"></span></p>
+        </li>
+      </template>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

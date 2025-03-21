@@ -1,0 +1,87 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  background-color: lightblue;
+}
+
+header {
+  text-align: center;
+  padding: 16px;
+  background-color: royalblue;
+  color: lightblue;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+#username {
+  font-family: "Times New Roman", Times, serif;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 250px;
+}
+
+#search-btn {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid gold;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: gold;
+  color: black;
+  transition: background-color 0.2s ease;
+}
+
+#search-btn:hover {
+  background-color: rgb(255, 234, 113);
+}
+
+main {
+  padding: 32px;
+}
+
+#repo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.repo-card {
+  background-color: rgb(255, 234, 113);
+  border-radius: 10px;
+  width: 300px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.repo-card:hover {
+  transform: scale(1.05);
+}
+
+.repo-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: royalblue;
+  text-decoration: none;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
